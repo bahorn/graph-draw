@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cytoscape draw thing</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+        <script src="bower_components/cytoscape/dist/cytoscape.min.js"></script>
+        <script src="bower_components/cytoscape-cxtmenu/cytoscape-cxtmenu.js"></script>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body ondrop="dropHandler(event);" ondragover="dragOverHandler(event);"> 
+        <div id="toolbar">
+            <button onclick="save()">save</button>
+        </div>
+        <div id="cy" />
+        <script src="main.js"></script>
+    </body>
+</html>
